@@ -3,6 +3,7 @@
 Two ways to govern coding-agent changes in Cursor with
 [umbra-core](https://github.com/bkd-dotcom/umbra-core).
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ## Prerequisite
 
 ```bash
