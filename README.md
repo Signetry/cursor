@@ -5,12 +5,12 @@
 
 
 Two ways to govern coding-agent changes in Cursor with
-[umbra-core](https://github.com/bkd-dotcom/umbra-core).
+[umbra-core](https://github.com/Signetry/core).
 
 ## Prerequisite
 
 ```bash
-pip install "umbra-core @ git+https://github.com/bkd-dotcom/umbra-core@v0.5.4"
+pip install "umbra-core @ git+https://github.com/Signetry/core@v0.5.4"
 ```
 
 Add a `.umbra/admission.yaml` to your repo declaring allowed/forbidden paths,
@@ -51,7 +51,7 @@ the [Umbra Admission GitHub Action](https://github.com/marketplace/actions/umbra
 
 ---
 
-Part of the [Umbra platform](https://github.com/bkd-dotcom/umbra-umbrella). Governance logic lives in [umbra-core](https://github.com/bkd-dotcom/umbra-core); this integration never reimplements policy and never auto-merges.
+Part of the [Umbra platform](https://github.com/Signetry/signetry). Governance logic lives in [umbra-core](https://github.com/Signetry/core); this integration never reimplements policy and never auto-merges.
 
 ## License
 
