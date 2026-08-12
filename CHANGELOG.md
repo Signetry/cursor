@@ -1,6 +1,17 @@
-# Changelog — umbra-cursor
+# Changelog — signetry-cursor
 
 Follows [Keep a Changelog](https://keepachangelog.com/) / [SemVer](https://semver.org/).
+
+## [Unreleased]
+
+### Changed
+
+- Rebranded the platform from Umbra to Signetry: CLI `umbra` → `signetry`, imports
+  `umbra_core` → `signetry_core`, env vars `UMBRA_*` → `SIGNETRY_*`, config
+  `.umbra/` → `.signetry/`, and the Cursor rule file `umbra.mdc` → `signetry.mdc`.
+- Install pin updated to
+  `signetry-core @ git+https://github.com/Signetry/core@v0.6.0`; the advisory
+  reviewer now installs `signetry-reviewer @ git+https://github.com/Signetry/reviewer@v0.1.2`.
 
 ## [0.3.0] — 2026-07-26
 
