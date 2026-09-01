@@ -9,7 +9,7 @@ Two ways to govern coding-agent changes in Cursor with
 ## Prerequisite
 
 ```bash
-pip install "signetry-core @ git+https://github.com/Signetry/core@v0.7.0"
+pip install "signetry-core @ git+https://github.com/Signetry/core@v0.8.0"
 ```
 
 Add a `.signetry/admission.yaml` to your repo declaring allowed/forbidden paths,
