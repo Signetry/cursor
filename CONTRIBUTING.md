@@ -28,7 +28,7 @@ and documentation. To exercise a change end to end, install the engine and point
 Cursor at your working copy:
 
 ```bash
-pip install "signetry-core @ git+https://github.com/Signetry/core@v0.7.0"
+pip install "signetry-core @ git+https://github.com/Signetry/core@v0.8.0"
 ```
 
 Then, in a scratch project with a `.signetry/admission.yaml`:
