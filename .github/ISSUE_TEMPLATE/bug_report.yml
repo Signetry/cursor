@@ -1,0 +1,55 @@
+name: Bug report
+description: Report a problem with the Cursor MCP server entry or the Signetry project rule.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For **security vulnerabilities** (scope bypass, authority escalation,
+        receipt forgery, secret exposure) do NOT use this form — see
+        [SECURITY.md](https://github.com/Signetry/cursor/security/policy).
+
+        Governance logic lives in
+        [signetry-core](https://github.com/Signetry/core). If the wrong admission
+        decision was made, or a receipt is wrong, file it there — this repo only
+        wires Cursor up to the engine.
+  - type: input
+    id: version
+    attributes:
+      label: signetry-core version
+      placeholder: "0.7.0 (pip show signetry-core)"
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Surface
+      options:
+        - MCP server (mcp.json / .cursor/mcp.json)
+        - Project rule (signetry.mdc / .cursor/rules/)
+        - README / setup instructions
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you observe, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: >-
+        A minimal repro — your `.signetry/admission.yaml`, the `.cursor/mcp.json` you
+        used, what you asked the agent to do, and the tool output or error.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      placeholder: "macOS 14 / Windows 11; Cursor 0.4x; Python 3.12"
