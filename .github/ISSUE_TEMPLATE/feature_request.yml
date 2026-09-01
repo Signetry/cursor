@@ -1,0 +1,35 @@
+name: Feature request
+description: Suggest an improvement to the Cursor integration (MCP wiring, project rule, docs).
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This repo is the Cursor-side surface only. New contract rules, executors, or
+        receipt behavior belong in
+        [signetry-core](https://github.com/Signetry/core/issues).
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / use case
+      description: What are you trying to govern in Cursor that isn't possible today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should change in `mcp.json`, `signetry.mdc`, or the setup docs?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: invariants
+    attributes:
+      label: Invariants
+      options:
+        - label: This preserves the invariants — the integration never reimplements policy (it pins `signetry-core`), `auto_merge` stays false, and the in-editor guard stays defense-in-depth rather than the hard boundary.
+          required: true
